@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>About</title>
+    <title>Shopping Cart</title>
 
     <!-- Bootstrap -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-              <a><img style="max-width:100px; margin-top: -7px;"src="img\SWdudes"> 
-              </a>
+            <a><img style="max-width:100px; margin-top: -7px;"src="img\SWdudes">
+            </a>
             <a class="navbar-brand" href="#">2nd Window</a>
           </div>
           <div>
@@ -56,65 +56,53 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <div class="container">
-        <div class="row">
-          <div class ="col-md-12 col-sm-6">
-            <h1 class="card-title">Meet The Crew</h1>
-            <p> Welcome to Second Window! We're from Austin, TX and we design t-shirts for humans. Meet the masterminds behind the designs: </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="thumbnail">
-              <img class="img-responsive card-img-top" style="width: 100%" src="img\Trevor.jpeg" alt="Card image cap">
-              <div class="card-block">
-                <h4 class="card-title">Trevor</h4>
-                <p class="card-text">Write something about Trevor here</p>
-
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="thumbnail">
-              <img class="img-responsive card-img-top" style="width:100%; height:545px" src="img\reedjones.jpg" alt="Card image cap">
-              <div class="card-block">
-                <h4 class="card-title">Reed</h4>
-                <p class="card-text">Write something about Reed here.</p>
-
-
-              </div>
-            </div>
-          </div>
-            <div class="clearfix"></div>
-          <div class="col-md-6 col-sm-6">
-            <div class="thumbnail">
-              <img class="img-responsive card-img-top" src="img\Kelly.jpg" alt="Card image cap">
-              <div class="card-block">
-                <h4 class="card-title">Kelly</h4>
-                <p class="card-text">Write something about Kelly here.</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <div class="thumbnail">
-              <img class="img-responsive card-img" src="img\Katie .jpg" alt="Card image">
-              <div class="card-img-top">
-                <h4 class="card-title">Katie</h4>
-                <p class="card-text">Write something about Katie here.</p>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container">
+	<table id="cart" class="table table-hover table-condensed">
+    				<thead>
+						<tr>
+							<th style="width:50%">Product</th>
+							<th style="width:10%">Price</th>
+							<th style="width:8%">Quantity</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="img/Creeper.png" alt="..." class="img-responsive"/></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">T-Shirt</h4>
+										<p>You picked out a good one!</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">$19.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">$19.99</td>
+							<td class="actions" data-th="">
+								<button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+								<button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total 1.99</strong></td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+							<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+						</tr>
+					</tfoot>
+				</table>
+</div>
     </main>
     <footer>
       <nav class="navbar navbar-inverse">
